@@ -75,7 +75,7 @@ def shop(update: Update, context: CallbackContext) -> None:
 def buy_item(update: Update, context: CallbackContext) -> None:
     user_id = update.message.from_user.id
     if len(context.args) == 0:
-        update.message.reply_text('Please specify an item to buy. Use /shop to see available items.')
+        update.message.reply_text('Слушай специальный предмет для покупки. Используй шоп /shop чтобы видеть  предметы.')
         return
 
     item_name = ' '.join(context.args)
